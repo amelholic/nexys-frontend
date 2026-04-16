@@ -144,7 +144,7 @@
 								Leadership Team
 							</h2>
 						</div>
-						{#each [{ n: 'Amel Holic', r: 'Client Relationships & Strategy' }, { n: 'Eugene van Aurich', r: 'Delivery & Operations' }, { n: 'Phillip Whillier', r: 'Technical Architecture & AI' }, { n: 'Luke Fordham', r: 'Technical Leadership & Dev' }] as m (m.n)}
+						{#each [{ n: 'Amel', r: 'Client Relationships & Strategy' }, { n: '[Name withheld]', r: 'Delivery & Operations' }, { n: '[Name withheld]', r: 'Technical Architecture & AI' }, { n: '[Name withheld]', r: 'Technical Leadership & Dev' }] as m (m.n)}
 							<div style="margin-bottom: 10px;">
 								<div style="font-size: 12px; font-weight: 600; color: {c.deepNavy}; margin-bottom: 1px;">{m.n}</div>
 								<div style="font-size: 10px; color: {c.slate};">{m.r}</div>

@@ -79,10 +79,10 @@
 	];
 
 	const team = [
-		{ name: 'Amel Holic', role: 'Project Lead', focus: 'Client relationship, strategic oversight', years: '20+ years' },
-		{ name: 'Eugene van Aurich', role: 'Delivery Lead', focus: 'Day-to-day delivery, integrations', years: '20 years' },
-		{ name: 'Phillip Whillier', role: 'Technical Architect', focus: 'AI engine, system architecture', years: '35+ years' },
-		{ name: 'Luke Fordham', role: 'Lead Developer', focus: 'Platform development, mobile apps', years: '7 years' },
+		{ name: 'Amel', role: 'Project Lead', focus: 'Client relationship, strategic oversight', years: '20+ years' },
+		{ name: '[Name withheld]', role: 'Delivery Lead', focus: 'Day-to-day delivery, integrations', years: '20 years' },
+		{ name: '[Name withheld]', role: 'Technical Architect', focus: 'AI engine, system architecture', years: '35+ years' },
+		{ name: '[Name withheld]', role: 'Lead Developer', focus: 'Platform development, mobile apps', years: '7 years' },
 	];
 
 	const investmentPhases = [
@@ -109,8 +109,10 @@
 	];
 
 	function initials(name: string) {
+		if (name.startsWith('[') || name.includes('withheld')) return '\u2014';
 		return name
 			.split(' ')
+			.filter(Boolean)
 			.map((n) => n[0])
 			.join('');
 	}
@@ -636,7 +638,7 @@
 				>
 					<div style="text-align: left;">
 						<div style="font-size: 14px; color: {c.lightSlate}; margin-bottom: 4px;">Questions?</div>
-						<div style="font-size: 18px; color: {c.white}; font-weight: 500;">Amel Holic</div>
+						<div style="font-size: 18px; color: {c.white}; font-weight: 500;">Amel</div>
 					</div>
 					<div style="text-align: left;">
 						<div style="font-size: 14px; color: {c.lightSlate}; margin-bottom: 4px;">Email</div>
