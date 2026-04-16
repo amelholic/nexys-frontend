@@ -5,7 +5,8 @@
 	type BriefDoc = {
 		name: string;
 		slug: string | null;
-		jsx: string;
+		/** JSX source id for ported templates; omitted for native Svelte routes. */
+		jsx?: string;
 		isDir?: boolean;
 		ready?: boolean;
 		/** When set, the library card links here instead of `{base}/brief/{slug}` (e.g. portal agent detail needs query params). */
@@ -153,8 +154,16 @@
 		},
 	];
 
-	const totalDocs = stages.reduce((n, s) => n + s.docs.length, 0);
-	const readyDocs = stages.reduce((n, s) => n + s.docs.filter((d) => d.ready).length, 0);
+	const resourcePlanningDocs: BriefDoc[] = [
+		{ name: 'Engagement flowchart', slug: 'engagement-flowchart', ready: true },
+		{ name: 'Role responsibility matrix', slug: 'role-matrix', ready: true },
+		{ name: 'Effort allocation model', slug: 'effort-allocation', ready: true }
+	];
+
+	const totalDocs = stages.reduce((n, s) => n + s.docs.length, 0) + resourcePlanningDocs.length;
+	const readyDocs =
+		stages.reduce((n, s) => n + s.docs.filter((d) => d.ready).length, 0) +
+		resourcePlanningDocs.filter((d) => d.ready).length;
 	const notReadyDocs = totalDocs - readyDocs;
 </script>
 
@@ -227,6 +236,38 @@
 				</div>
 			</div>
 		{/each}
+
+		<!-- Resource planning (native Svelte tools) -->
+		<div class="relative mb-12 last:mb-0">
+			<div class="absolute left-6 top-0 z-10 -translate-x-1/2 sm:left-8">
+				<div
+					class="flex h-5 w-5 items-center justify-center rounded-full border-2 border-white shadow-sm"
+					style="background-color: #0ea5e9"
+				>
+					<span class="text-[9px] font-bold text-white">{stages.length + 1}</span>
+				</div>
+			</div>
+			<div class="ml-14 sm:ml-16">
+				<h2 class="mb-3 text-xs font-semibold uppercase tracking-[1.5px] text-slate-500">Resource planning</h2>
+				<p class="mb-3 max-w-2xl text-[11px] leading-relaxed text-slate-500">
+					Visual navigation and commercial models that sit alongside the template library — print-friendly where noted on
+					each page.
+				</p>
+				<div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+					{#each resourcePlanningDocs as doc}
+						{#if doc.ready && doc.slug}
+							<a
+								href={doc.href ?? `${base}/brief/${doc.slug}`}
+								class="group flex items-center gap-2.5 rounded-lg border border-slate-200 bg-white px-3.5 py-2.5 shadow-sm transition-all hover:border-sky-400/50 hover:shadow-md"
+							>
+								<span class="h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500"></span>
+								<span class="text-xs font-medium text-navy group-hover:text-sky-600 transition-colors">{doc.name}</span>
+							</a>
+						{/if}
+					{/each}
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Footer -->
