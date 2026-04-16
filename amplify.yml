@@ -1,0 +1,23 @@
+# AWS Amplify Hosting (SSR) for this SvelteKit app.
+# Console: connect the full monorepo, set "App root" / "Root directory" to `frontend` so `../brief` exists at build time.
+# Docs: https://docs.aws.amazon.com/amplify/latest/userguide/get-started-sveltekit.html
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci --cache .npm --prefer-offline
+    build:
+      commands:
+        - export SVELTEKIT_ADAPTER=amplify
+        - npm run build
+        - cp -r ../brief ./build/compute/default/brief
+        - cd build/compute/default
+        - npm i --production
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - .npm/**/*

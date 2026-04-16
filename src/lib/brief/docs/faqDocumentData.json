@@ -1,0 +1,116 @@
+{
+  "general": [
+    {
+      "q": "What exactly is an AI agent?",
+      "a": "An AI agent is software that can read, understand, and act on information - much like a knowledgeable employee would. It can read documents, follow business rules, make decisions, and interact with your existing systems. Unlike simple automation, it can handle variation and nuance in inputs."
+    },
+    {
+      "q": "How is this different from traditional automation or RPA?",
+      "a": "Traditional automation follows rigid scripts - if the format changes even slightly, it breaks. AI agents understand context and intent, so they can handle variation in document formats, wording, and edge cases. They adapt, where traditional automation just fails."
+    },
+    {
+      "q": "Will this replace my staff?",
+      "a": "No. We design agents to handle the repetitive, rule-based work so your staff can focus on higher-value activities - judgment calls, relationship building, strategic thinking. Think of it as giving your team a capable assistant, not a replacement."
+    },
+    {
+      "q": "How accurate are AI agents?",
+      "a": "For well-defined tasks with good training data, we typically see 95-99% accuracy. We always build in human review for exceptions and edge cases. The goal is reliable enough for routine work, with humans handling the rest."
+    },
+    {
+      "q": "What happens when the AI makes a mistake?",
+      "a": "Every agent we build has clear escalation paths. When the agent is uncertain, it flags for human review rather than guessing. We also log every decision with reasoning, so you can audit and improve over time."
+    }
+  ],
+  "process": [
+    {
+      "q": "How do we know if a process is suitable for AI?",
+      "a": "Good candidates are repetitive, rule-based (even if complex rules), have digital inputs, run at reasonable volume (50+ per month), and can tolerate some human handling of exceptions. We offer a free assessment to help you identify the best opportunities."
+    },
+    {
+      "q": "How long does a typical project take?",
+      "a": "Most projects run 8-12 weeks from kickoff to production. Simple automations can be faster (6-8 weeks), complex multi-system integrations take longer (12-16 weeks). We always start with a clear timeline during scoping."
+    },
+    {
+      "q": "What do we need to provide?",
+      "a": "Access to subject matter experts who know the process, sample data for testing, access to relevant systems (or IT support to set up integrations), and a point of contact for decisions. We handle the rest."
+    },
+    {
+      "q": "Do we need to change our existing systems?",
+      "a": "Usually no. We integrate with your systems as they are - via APIs, database connections, or file-based integration. We work with SAP, Salesforce, Microsoft 365, and most modern business systems."
+    },
+    {
+      "q": "How much involvement is required from our team?",
+      "a": "Expect 2-4 hours per week during discovery and testing phases. Your experts help us understand the process and validate the agent is working correctly. Day-to-day build work is on us."
+    }
+  ],
+  "technical": [
+    {
+      "q": "Where does the AI run? Is our data safe?",
+      "a": "Agents run in secure cloud infrastructure (AWS Sydney region by default). Your data is encrypted in transit and at rest. We can also deploy in your own cloud environment or on-premises for sensitive data."
+    },
+    {
+      "q": "Which AI models do you use?",
+      "a": "Primarily Anthropic Claude for language understanding and reasoning. We select models based on the task - balancing capability, speed, and cost. We do not use one-size-fits-all solutions."
+    },
+    {
+      "q": "What if the AI provider changes or goes away?",
+      "a": "We design for portability. The business logic is in our code, not locked into a specific model. If needed, we can switch underlying models with minimal rework. You are not locked in."
+    },
+    {
+      "q": "How do you handle sensitive or regulated data?",
+      "a": "We follow data classification best practices, implement appropriate access controls, maintain audit logs, and can work with your compliance team on specific requirements. We have experience with financial services and healthcare regulations."
+    },
+    {
+      "q": "What systems can you integrate with?",
+      "a": "Most modern business systems with APIs or database access: SAP, Oracle, Salesforce, Microsoft 365, NetSuite, Xero, MYOB, SharePoint, Slack, custom applications, and more. If it has an interface, we can usually connect to it."
+    }
+  ],
+  "commercial": [
+    {
+      "q": "How much does it cost?",
+      "a": "Projects typically range from $30K-$100K depending on complexity. A simple single-process automation starts around $30K. Complex multi-system workflows with multiple agents are $80K+. We provide detailed quotes after scoping."
+    },
+    {
+      "q": "Are there ongoing costs?",
+      "a": "Yes - typically $2-5K per month covering AI model usage, infrastructure, and support. This varies with volume. We are transparent about ongoing costs during scoping so there are no surprises."
+    },
+    {
+      "q": "What ROI can we expect?",
+      "a": "Most clients see 60-80% reduction in time spent on automated tasks. For a process costing $100K/year in labour, expect $60-80K in savings. Payback periods are typically 4-8 months."
+    },
+    {
+      "q": "What if it does not work?",
+      "a": "We validate feasibility before committing to build. Our discovery phase identifies risks early. If we do not believe we can deliver value, we will tell you. We do not take projects just to bill hours."
+    },
+    {
+      "q": "Do you offer fixed-price projects?",
+      "a": "Yes, after proper scoping. The discovery phase is typically time-and-materials to ensure we understand the problem. Build and deploy phases can be fixed-price with a clear scope."
+    },
+    {
+      "q": "What support do you provide after go-live?",
+      "a": "All projects include 30-90 days of stabilisation support. After that, we offer ongoing support packages from $1.5K/month (basic monitoring) to $7.5K/month (priority support with tuning and improvements)."
+    }
+  ],
+  "concerns": [
+    {
+      "q": "What about AI hallucinations? Will it make things up?",
+      "a": "We design agents to work with your data and rules, not to generate creative content. For critical decisions, we use verification steps and confidence thresholds. If the agent is not certain, it escalates rather than guesses."
+    },
+    {
+      "q": "Is this technology mature enough for production use?",
+      "a": "Yes. Large language models have been in production use for business applications since 2023. We use proven patterns and architectures. This is not experimental - it is practical, working technology."
+    },
+    {
+      "q": "How do we know the AI is making good decisions?",
+      "a": "Every decision is logged with reasoning. You can review why the agent made each choice. We also build dashboards showing accuracy, exception rates, and trends so you can monitor performance."
+    },
+    {
+      "q": "What if regulations change around AI?",
+      "a": "We design with transparency and human oversight built in, which aligns with emerging AI regulations globally. Our approach - humans in control, clear audit trails, explainable decisions - is already good practice."
+    },
+    {
+      "q": "Can we turn it off if something goes wrong?",
+      "a": "Absolutely. Every agent has kill switches and can be paused instantly. We can also put agents in shadow mode where they recommend but humans approve, until you are confident."
+    }
+  ]
+}

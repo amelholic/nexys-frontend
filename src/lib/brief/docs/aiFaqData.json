@@ -1,0 +1,158 @@
+[
+  {
+    "id": "costs-1",
+    "category": "costs",
+    "question": "What are the typical ongoing costs for an AI solution?",
+    "answer": "Ongoing costs for AI solutions typically fall into three categories:\n\n**1. Infrastructure & Hosting**\nCloud hosting costs vary based on usage but typically range from $200-2,000/month for most business applications. This includes compute resources, storage, and networking.\n\n**2. AI Model Costs**\nWhen using managed AI services like AWS Bedrock or Azure OpenAI:\n- Pay-per-use pricing based on tokens processed (input and output)\n- Typical costs: $0.01-0.03 per 1,000 tokens for standard models\n- For most email/document processing: $50-500/month depending on volume\n\n**3. Support & Maintenance**\n- Ongoing monitoring and updates\n- Model fine-tuning and improvement\n- Available on retainer or hourly basis\n\nWe provide detailed cost projections during the proposal phase based on your expected usage patterns."
+  },
+  {
+    "id": "costs-2",
+    "category": "costs",
+    "question": "How do AI compute costs scale with usage?",
+    "answer": "AI compute costs scale based on several factors:\n\n**Token-Based Pricing**\nMost AI services charge per \"token\" (roughly 4 characters or 0.75 words). You pay for both input tokens (what you send) and output tokens (what the AI generates).\n\n**Example: Email Classification**\n- Average email: ~500 tokens input\n- Classification response: ~100 tokens output\n- Cost per email: ~$0.01-0.02\n- 1,000 emails/day: ~$300-600/month\n\n**Scaling Considerations**\n- Volume discounts often available\n- Caching can reduce repeated processing costs\n- Model selection affects cost (smaller models = lower cost)\n\nWe design solutions with cost efficiency in mind, recommending the right-sized model for each task."
+  },
+  {
+    "id": "costs-3",
+    "category": "costs",
+    "question": "What support options are available after go-live?",
+    "answer": "We offer flexible post-launch support options:\n\n**Included Support (First 2-4 weeks)**\n- Bug fixes and configuration adjustments\n- Issue resolution and troubleshooting\n- Knowledge transfer to your team\n\n**Ongoing Support Options**\n\n*Retainer Agreement*\n- Fixed monthly hours at reduced rate\n- Priority response times\n- Proactive monitoring and updates\n- Recommended for business-critical systems\n\n*Ad-Hoc Support*\n- Available at standard hourly rate ($180/hour)\n- No minimum commitment\n- Best for stable systems with occasional needs\n\n**Vendor Support**\nFor underlying cloud services (AWS, Azure, etc.), issues should be raised directly with the provider under your support plan. We can help navigate vendor support when needed."
+  },
+  {
+    "id": "costs-4",
+    "category": "costs",
+    "question": "Are there any hidden costs we should be aware of?",
+    "answer": "We believe in transparent pricing. Here are costs that are sometimes overlooked:\n\n**Often Missed Costs**\n- Data transfer fees (usually minimal, but can add up)\n- Storage for logs and audit trails\n- Development/staging environments\n- SSL certificates and domain costs\n\n**Typically Included**\n- All development and testing\n- Documentation and training\n- Initial deployment and configuration\n- Bug fixes during warranty period\n\n**Your Responsibility**\n- Cloud infrastructure accounts (AWS, Azure, etc.)\n- Third-party service subscriptions\n- Internal staff time for testing and feedback\n\nWe itemise all expected costs in our proposals so there are no surprises."
+  },
+  {
+    "id": "arch-1",
+    "category": "architecture",
+    "question": "What AI models and platforms do you typically use?",
+    "answer": "We select AI platforms based on your specific requirements:\n\n**Primary Platforms**\n\n*AWS Bedrock*\n- Enterprise-grade managed AI service\n- Multiple model options (Claude, Llama, etc.)\n- Strong Australian data residency options\n- Ideal for: Document processing, classification, knowledge bases\n\n*Azure OpenAI*\n- Microsoft's managed OpenAI service\n- GPT-4 and embedding models\n- Good Microsoft 365 integration\n- Ideal for: Organisations already on Azure\n\n*Google Vertex AI*\n- Google's AI platform\n- Gemini models\n- Strong for: Search and multimodal tasks\n\n**Model Selection Criteria**\n- Task requirements (accuracy, speed, cost)\n- Data residency requirements\n- Integration with existing systems\n- Compliance and certification needs\n\nWe recommend the right tool for the job, not a one-size-fits-all approach."
+  },
+  {
+    "id": "arch-2",
+    "category": "architecture",
+    "question": "How do you ensure AI accuracy and reduce errors?",
+    "answer": "We implement multiple layers to ensure reliable AI outputs:\n\n**1. Guardrails and Validation**\n- Content filters to block inappropriate outputs\n- Topic restrictions to keep AI focused on its task\n- Output validation against expected formats\n- Confidence scoring to flag uncertain responses\n\n**2. Grounding and Knowledge Bases**\n- Connect AI to your authoritative documents\n- Reduce hallucinations by validating against source material\n- Provide citations and references in responses\n\n**3. Human-in-the-Loop**\n- AI assists, humans decide (for critical tasks)\n- Review queues for low-confidence outputs\n- Escalation paths for edge cases\n\n**4. Continuous Improvement**\n- Monitor accuracy metrics over time\n- Collect feedback on incorrect outputs\n- Regular model tuning and prompt refinement\n\n**5. Testing and Validation**\n- Comprehensive test suites before launch\n- A/B testing of model configurations\n- User acceptance testing with real scenarios"
+  },
+  {
+    "id": "arch-3",
+    "category": "architecture",
+    "question": "What happens if the AI gives a wrong answer?",
+    "answer": "We design systems with failure handling as a core principle:\n\n**Prevention**\n- Confidence thresholds: Low-confidence outputs flagged for review\n- Scope restrictions: AI only operates within defined boundaries\n- Validation rules: Outputs checked against business logic\n\n**Detection**\n- Monitoring dashboards track accuracy trends\n- User feedback mechanisms to report issues\n- Automated alerts for anomalies\n\n**Handling**\n- Graceful fallbacks to human review\n- Clear messaging when AI is uncertain\n- Audit trails for all decisions\n\n**Recovery**\n- Easy correction workflows\n- Learning from mistakes (with your approval)\n- Regular accuracy reviews\n\n**Important**: For critical decisions, we always recommend human oversight. AI should augment your team's capabilities, not replace their judgment entirely."
+  },
+  {
+    "id": "arch-4",
+    "category": "architecture",
+    "question": "Can the AI learn and improve over time?",
+    "answer": "AI improvement can happen at multiple levels:\n\n**What We Can Do**\n\n*Prompt and Configuration Tuning*\n- Refine instructions based on real-world performance\n- Adjust thresholds and rules\n- No additional data training required\n\n*Knowledge Base Updates*\n- Add new documents and examples\n- Update classification categories\n- Expand coverage areas\n\n*Model Updates*\n- Benefit from provider model improvements\n- Upgrade to newer model versions when available\n\n**What Requires Caution**\n\n*Fine-Tuning on Your Data*\n- Possible but requires careful governance\n- Your data used to customise model behaviour\n- May have compliance implications\n\n*Continuous Learning*\n- AI that automatically learns from corrections\n- Requires strong oversight and controls\n- Often not recommended for enterprise use\n\nWe'll discuss the right approach for your use case, balancing improvement with predictability and control."
+  },
+  {
+    "id": "arch-5",
+    "category": "architecture",
+    "question": "Will the AI solution lock us into a specific vendor?",
+    "answer": "We design for flexibility and avoid lock-in where practical:\n\n**Our Approach**\n- Use standard APIs and interfaces where possible\n- Document all configurations and prompts\n- Provide full source code and documentation\n- Design modular architectures\n\n**Portability Considerations**\n\n*Relatively Portable*\n- Business logic and workflows\n- Prompt engineering and instructions\n- Integration patterns\n- Knowledge base content\n\n*Platform-Specific*\n- Some managed service features\n- Specific model behaviours\n- Native service integrations\n\n**Ownership**\n- You own all custom code we develop\n- You own your data and configurations\n- You own knowledge base content\n- Standard IP transfer on project completion\n\n**Practical Reality**\nSwitching AI providers requires effort (like any technology change), but we ensure you're never held hostage to a specific vendor."
+  },
+  {
+    "id": "tech-1",
+    "category": "technical",
+    "question": "What AI framework do you use? Do you use LangChain?",
+    "answer": "We are pragmatists, not framework evangelists. Our approach:\n\n**Our Default Stack**\n- **LLM**: Claude (Anthropic) via AWS Bedrock or direct API\n- **Orchestration**: Custom, lightweight TypeScript\n- **Tools**: Type-safe functions we build and control\n- **State**: PostgreSQL + Redis\n\n**Why Not LangChain by Default?**\nLangChain is powerful but often adds unnecessary complexity:\n- Abstraction overhead that makes debugging harder\n- Dependency weight and frequent breaking changes\n- Overkill for many straightforward use cases\n\n**When We Would Use LangChain**\n- Complex RAG pipelines with multiple retrievers\n- Rapid prototyping that will be rewritten\n- Client specifically requests it\n\n**Our Philosophy**\nWe choose the simplest architecture that solves the problem. For most projects, Claude's native tool use with a thin orchestration layer outperforms heavy frameworks."
+  },
+  {
+    "id": "tech-2",
+    "category": "technical",
+    "question": "Why do you use Claude over GPT-4?",
+    "answer": "We default to Claude for several reasons, though we're not dogmatic about it:\n\n**Why Claude**\n\n*Reasoning Quality*\nClaude excels at complex, multi-step reasoning — the core of what AI agents do. For document processing and decision-making, it consistently outperforms alternatives.\n\n*Native Tool Use*\nBuilt-in function calling without framework overhead. Reliable, well-documented, and predictable.\n\n*Long Context Window*\n200K tokens means handling complex documents without chunking gymnastics. Entire contracts, full email threads, comprehensive reports.\n\n*Instruction Following*\nExceptional at following detailed system prompts consistently. Critical for business process automation.\n\n*Structured Output*\nReliable JSON output for system integration. Less post-processing, fewer failures.\n\n**When We Use GPT-4 / Azure OpenAI**\n- Client mandate or existing Azure investment\n- Specific capability requirements (e.g., certain vision tasks)\n- Data residency requirements that favour Azure\n\n**When We Use Smaller Models**\n- High-volume, low-complexity subtasks (Claude Haiku)\n- Classification tasks where Haiku performs equally well\n- Cost optimisation at scale\n\nWe're model-agnostic in design, Claude-first in practice."
+  },
+  {
+    "id": "tech-3",
+    "category": "technical",
+    "question": "How do you handle complex multi-step workflows?",
+    "answer": "We use a pattern-based approach, selecting the simplest architecture that solves the problem:\n\n**Pattern 1: Single Agent + Tools (Our Default)**\nOne AI agent with multiple tools. Handles 80% of use cases.\n- Best for: Invoice processing, contract review, document extraction\n- Advantages: Easy to debug, low latency, predictable costs\n\n**Pattern 2: Router Agent**\nA coordinator that routes requests to specialised agents.\n- Best for: Multiple distinct use cases, shared entry point\n- Advantages: Clear separation, independent scaling\n\n**Pattern 3: Collaborative Multi-Agent**\nMultiple agents that work together on complex tasks.\n- Best for: Complex research, multi-perspective analysis\n- Caution: Higher cost (3-10x), more complex to maintain\n\n**Pattern 4: Hierarchical Multi-Agent**\nManager agents delegating to worker agents.\n- Best for: Enterprise-scale orchestration\n- Caution: Rarely needed. If you think you need this, let's discuss.\n\n**Our Rule**\nStart with Pattern 1. Add complexity only when proven necessary. Many teams over-engineer when a single well-designed agent would suffice."
+  },
+  {
+    "id": "tech-4",
+    "category": "technical",
+    "question": "How do you prevent AI agents from going wrong?",
+    "answer": "We implement multiple layers of protection:\n\n**Guardrails**\n- *Explicit tool permissions*: Agents can only use approved tools\n- *Topic boundaries*: What the agent will and won't discuss\n- *Action thresholds*: Human approval required above certain limits\n- *Loop limits*: Hard caps on reasoning iterations\n\n**Validation**\n- *Output validation*: Check responses before returning to user\n- *Confidence thresholds*: Low-confidence outputs → human review\n- *Business rule checks*: Outputs validated against your logic\n\n**Observability**\n- *Log every LLM call*: Input, output, tokens, latency, cost\n- *Trace tool executions*: What was called, with what params, what returned\n- *Decision capture*: Why did the agent choose this path?\n\n**Failure Handling**\n- *Graceful fallbacks*: Route to human when uncertain\n- *Clear messaging*: User knows when AI is unsure\n- *Audit trails*: Complete record of all decisions\n\n**Our Rule**\nEvery agent has explicit boundaries. \"The agent decided\" is never an acceptable excuse for a bad outcome."
+  },
+  {
+    "id": "tech-5",
+    "category": "technical",
+    "question": "What about AI costs at scale? Can they blow out?",
+    "answer": "Yes, AI costs can escalate quickly if not managed. Here's how we prevent blowouts:\n\n**The Agentic Loop Tax**\nA simple API call costs $X. An agentic loop with planning, tools, and reflection can cost $5-10X or more. This multiplies at scale.\n\n**Cost Multipliers by Pattern**\n| Pattern | Multiplier |\n|---------|------------|\n| Single Agent + Tools | 1-3x |\n| Router Agent | 1.5-2x |\n| Collaborative Multi-Agent | 3-10x |\n| Hierarchical | 5-20x |\n\n**How We Control Costs**\n\n*Right-Size Models*\nUse Claude Haiku ($0.25/M tokens) for simple subtasks, Sonnet for complex reasoning. Don't use expensive models for classification.\n\n*Hard Caps on Loops*\nEvery agent has maximum iteration limits. No runaway reasoning.\n\n*Aggressive Caching*\nDon't re-compute what hasn't changed. Cache embeddings, cache lookups, cache decisions.\n\n*Cost Per Transaction Tracking*\nKnow exactly what each process costs. Monitor and alert on anomalies.\n\n*Cost Projections in Proposals*\nWe model expected costs before you commit. No surprises.\n\n**Our Rule**\nEvery proposal includes cost modelling. Every agent has cost caps. We track cost per transaction from day one."
+  },
+  {
+    "id": "gov-1",
+    "category": "governance",
+    "question": "Where is our data processed and stored?",
+    "answer": "Data residency is a critical consideration. Here's our standard approach:\n\n**Australian Data Residency**\nFor Australian clients, we configure all services to process and store data within Australia:\n\n*AWS Sydney Region (ap-southeast-2)*\n- All Bedrock AI processing\n- S3 storage for knowledge bases\n- CloudWatch logs and metrics\n- Secrets Manager for credentials\n\n*Azure Australia East*\n- Azure OpenAI processing\n- Blob storage\n- Application hosting\n\n**What This Means**\n- No cross-region data transfer\n- Data subject to Australian privacy law\n- Meets most Australian government requirements\n\n**Verification**\nWe can provide architecture documentation confirming data residency configuration as part of project deliverables."
+  },
+  {
+    "id": "gov-2",
+    "category": "governance",
+    "question": "Do AI providers have access to our data?",
+    "answer": "This is one of the most common concerns. The short answer: **No.**\n\n**Enterprise AI Services (AWS Bedrock, Azure OpenAI)**\n- Your data is NOT used to train models\n- Your data is NOT shared with model providers\n- Your data is NOT accessible to other customers\n- The cloud provider acts as a data processor, not the model creator\n\n**How It Works**\n- Your input goes to the AI service\n- The AI processes it in isolated infrastructure\n- The output returns to you\n- Nothing is retained for training or shared\n\n**In Writing**\nThis is documented in:\n- AWS Bedrock Service Terms\n- Azure OpenAI Data Privacy documentation\n- Specific data processing agreements available on request\n\n**Important Distinction**\nThis applies to enterprise managed services. Consumer AI tools (like ChatGPT's free tier) may have different terms. We only use enterprise-grade services with clear data isolation."
+  },
+  {
+    "id": "gov-3",
+    "category": "governance",
+    "question": "How is personal information (PII) handled?",
+    "answer": "Personal information requires careful handling throughout the AI pipeline:\n\n**Detection**\n- AI guardrails configured to detect PII (names, emails, phone numbers, addresses, etc.)\n- Custom rules for industry-specific sensitive data\n\n**Handling Options**\n\n*Option 1: Block*\n- Reject requests containing certain PII types\n- Useful when PII processing isn't required\n\n*Option 2: Anonymise*\n- Replace PII with placeholders in processing\n- Restore in final output if needed\n\n*Option 3: Process with Controls*\n- Allow processing with appropriate safeguards\n- Strict access controls and logging\n- Clear retention policies\n\n**Storage**\n- AI typically processes data in real-time\n- Original documents stay in source systems\n- Classification results stored, not full content\n- Knowledge bases contain reference docs, not customer data\n\n**Your Choice**\nWe configure PII handling based on your privacy requirements and data governance policies."
+  },
+  {
+    "id": "gov-4",
+    "category": "governance",
+    "question": "What data retention policies apply?",
+    "answer": "We implement clear retention policies for all data types:\n\n**Typical Retention Configuration**\n\n| Data Type | Default Retention | Deletion Method |\n|-----------|------------------|-----------------|\n| Processing logs | 90 days | Automatic expiration |\n| Classification results | Configurable | Policy-based deletion |\n| Audit trails | 12-24 months | Controlled deletion |\n| Knowledge base docs | Until removed | Manual deletion |\n| Error logs | 30 days | Automatic expiration |\n\n**Key Principles**\n- Retain only what's needed\n- Encrypt everything at rest\n- Automatic expiration where possible\n- Clear deletion procedures\n\n**Your Control**\n- Retention periods adjustable to your policies\n- Deletion requests honoured promptly\n- Audit trails of all deletions\n- Data export available on request\n\n**Important**: The AI reads data for processing but typically doesn't create long-term copies of your source content."
+  },
+  {
+    "id": "gov-5",
+    "category": "governance",
+    "question": "How do you handle data for AI training vs inference?",
+    "answer": "This is an important distinction:\n\n**Training** = Teaching the AI model (we don't do this with your data)\n**Inference** = Using the AI model to process your requests (this is what we do)\n\n**Our Approach: Inference Only**\n\nWhen your data is processed:\n1. Input sent to AI service\n2. AI generates response\n3. Response returned to you\n4. Nothing retained for training\n\n**Your Data is NOT Used To:**\n- Train foundation models\n- Improve models for other customers\n- Create datasets for any purpose\n- Fine-tune without explicit consent\n\n**If Fine-Tuning is Requested**\n- Requires explicit written agreement\n- Clear scope of which data is used\n- Your fine-tuned model is yours alone\n- Can be deleted on request\n\n**Documentation**\nWe provide data processing documentation confirming this approach as part of project deliverables."
+  },
+  {
+    "id": "sec-1",
+    "category": "security",
+    "question": "What authentication methods are used for integrations?",
+    "answer": "We implement modern, secure authentication for all integrations:\n\n**Microsoft 365 Integration**\n- OAuth 2.0 via Microsoft Graph API\n- App registration in your Azure AD\n- Admin consent for required permissions\n- Token-based access with automatic refresh\n- No password storage\n\n**Email Access Permissions**\nWe follow least-privilege principles:\n- Mail.Read (read only, no send/delete)\n- Scoped to specific mailboxes\n- No organisation-wide access\n- Compatible with MFA requirements\n\n**Other Integrations**\n- API keys stored in secrets management\n- Service accounts with minimal permissions\n- Certificate-based auth where supported\n- Regular credential rotation\n\n**Your Control**\n- You control app registrations in your tenant\n- You grant and can revoke consent\n- Full visibility in Azure AD audit logs"
+  },
+  {
+    "id": "sec-2",
+    "category": "security",
+    "question": "How are credentials and secrets protected?",
+    "answer": "All sensitive credentials are protected using enterprise-grade secrets management:\n\n**Storage**\n- AWS Secrets Manager or Azure Key Vault\n- Never hardcoded in application code\n- Never stored in configuration files\n- Never committed to source control\n\n**Encryption**\n- Encrypted at rest using cloud KMS\n- TLS 1.2+ for all transmission\n- Automatic key rotation available\n\n**Access Control**\n- IAM policies restrict access to service roles only\n- No human access in production\n- All access logged and auditable\n\n**Rotation**\n- Automatic rotation configured where supported\n- Manual rotation procedures documented\n- No shared credentials across environments\n\n**Audit Trail**\n- All secret access logged via CloudTrail/Azure Monitor\n- Alerts on unusual access patterns\n- Regular access reviews"
+  },
+  {
+    "id": "sec-3",
+    "category": "security",
+    "question": "What logging and monitoring is implemented?",
+    "answer": "Comprehensive observability is built into every solution:\n\n**Logging**\n\n| Log Type | What's Captured |\n|----------|----------------|\n| API Activity | All service calls, authentication events |\n| Agent Execution | Processing decisions, classification results |\n| Errors | Failures, exceptions, retries |\n| Access | Who accessed what, when |\n\n**Monitoring**\n\n| Metric | Alert Threshold |\n|--------|----------------|\n| Response Time | Alert if >30 seconds |\n| Error Rate | Alert if >5% |\n| Confidence Score | Alert if average drops |\n| Cost | Alert at budget thresholds |\n\n**Dashboards**\nCustom dashboards showing:\n- Processing volume and trends\n- Error rates and types\n- Classification distribution\n- Cost tracking\n\n**Alerting**\n- Email/SMS/Slack notifications\n- Escalation procedures\n- On-call integration if required"
+  },
+  {
+    "id": "sec-4",
+    "category": "security",
+    "question": "Who has access to AI outputs and how is it controlled?",
+    "answer": "Access to AI-generated outputs follows strict role-based controls:\n\n**Typical Access Roles**\n\n| Role | Access Level |\n|------|-------------|\n| Administrators | Full access: view outputs, modify configs, access logs |\n| Business Users | Operational: view results via designated interface |\n| Service Provider | Implementation only, removed after handover |\n\n**Technical Controls**\n- All resources configured with private access only\n- No public endpoints\n- VPC/VNet isolation where applicable\n- MFA required for administrative access\n\n**Audit**\n- All access logged\n- Regular access reviews\n- Alerts on privilege escalation\n- Clear offboarding procedures\n\n**Your Infrastructure**\nAccess control integrates with your existing identity management where possible (Azure AD, Okta, etc.)."
+  },
+  {
+    "id": "sec-5",
+    "category": "security",
+    "question": "What security certifications and compliance apply?",
+    "answer": "AI solutions built on major cloud platforms inherit extensive compliance coverage:\n\n**AWS Compliance (Bedrock, etc.)**\n- ISO 27001, 27017, 27018\n- SOC 1, SOC 2, SOC 3\n- IRAP (Australian Government)\n- PCI DSS\n\n**Azure Compliance (OpenAI, etc.)**\n- ISO 27001, 27017, 27018\n- SOC 1, SOC 2, SOC 3\n- IRAP assessed\n- Australian data residency\n\n**Solution-Level Security**\n- Architecture follows Well-Architected Framework\n- Encryption at rest and in transit throughout\n- Least-privilege access controls\n- Security documentation provided\n\n**Additional Assurance**\n- Independent security review available\n- Penetration testing can be arranged\n- Compliance reports via AWS Artifact/Azure Trust Center\n\nWe can provide specific compliance documentation relevant to your industry or regulatory requirements."
+  },
+  {
+    "id": "sec-6",
+    "category": "security",
+    "question": "What happens if there's a security incident?",
+    "answer": "Security incident response is planned from day one:\n\n**During Implementation**\n- Full incident response as part of delivery\n- Immediate notification to your team\n- Root cause analysis and remediation\n\n**Post-Launch (Support Period)**\n- Covered under included support window\n- Priority response for security issues\n- Coordination with your security team\n\n**After Support Period**\n- Available under support agreement or ad-hoc\n- We recommend maintaining a support relationship for critical systems\n\n**Your Responsibilities**\n- Notify us of suspected issues promptly\n- Maintain cloud provider support plans\n- Follow your internal incident procedures\n\n**Cloud Provider Incidents**\nFor issues with underlying AWS/Azure services:\n- Raise via your provider support plan\n- We can assist with diagnosis and workarounds\n- Provider responsible for infrastructure security"
+  },
+  {
+    "id": "sec-7",
+    "category": "security",
+    "question": "Can the AI be manipulated or \"jailbroken\"?",
+    "answer": "AI security is an evolving field. Here's how we mitigate risks:\n\n**Built-in Protections**\n\n*Guardrails*\n- Content filtering on inputs and outputs\n- Topic restrictions to keep AI on-task\n- Denied topic lists for off-limits areas\n- Prompt injection detection\n\n*Architecture*\n- AI has limited, defined capabilities\n- No access to systems beyond its scope\n- Output validation before action\n\n**Monitoring**\n- Unusual patterns flagged for review\n- Attempts to bypass restrictions logged\n- Regular review of edge cases\n\n**Realistic Expectations**\n- No AI system is 100% foolproof\n- Defence in depth is the approach\n- Human oversight for critical decisions\n- Regular security updates as threats evolve\n\n**Our Commitment**\nWe stay current with AI security research and update protections as new attack vectors emerge."
+  }
+]

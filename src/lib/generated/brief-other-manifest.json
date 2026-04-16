@@ -1,0 +1,177 @@
+{
+	"stages": [
+		{
+			"id": "root",
+			"label": "Brief root",
+			"color": "#8B5CF6",
+			"docs": [
+				{
+					"name": "Nexys Ai Capability Statement V2",
+					"rel": "Nexys_AI_Capability_Statement_v2.jsx",
+					"slug": "TmV4eXNfQUlfQ2FwYWJpbGl0eV9TdGF0ZW1lbnRfdjIuanN4"
+				},
+				{
+					"name": "Template Index",
+					"rel": "Template_Index.jsx",
+					"slug": "VGVtcGxhdGVfSW5kZXguanN4"
+				}
+			]
+		},
+		{
+			"id": "ai_flow_internal",
+			"label": "AI Flow internal",
+			"color": "#00B4FF",
+			"docs": [
+				{
+					"name": "Agentcard Clientsupport",
+					"rel": "AI_Flow_Internal/02_Agent_Portfolio/AgentCard_ClientSupport.jsx",
+					"slug": "QUlfRmxvd19JbnRlcm5hbC8wMl9BZ2VudF9Qb3J0Zm9saW8vQWdlbnRDYXJkX0NsaWVudFN1cHBvcnQuanN4"
+				},
+				{
+					"name": "Agentcard Projectstatus",
+					"rel": "AI_Flow_Internal/02_Agent_Portfolio/AgentCard_ProjectStatus.jsx",
+					"slug": "QUlfRmxvd19JbnRlcm5hbC8wMl9BZ2VudF9Qb3J0Zm9saW8vQWdlbnRDYXJkX1Byb2plY3RTdGF0dXMuanN4"
+				},
+				{
+					"name": "Agentcard Proposalgeneration",
+					"rel": "AI_Flow_Internal/02_Agent_Portfolio/AgentCard_ProposalGeneration.jsx",
+					"slug": "QUlfRmxvd19JbnRlcm5hbC8wMl9BZ2VudF9Qb3J0Zm9saW8vQWdlbnRDYXJkX1Byb3Bvc2FsR2VuZXJhdGlvbi5qc3g"
+				},
+				{
+					"name": "Agentcard Websitequalification",
+					"rel": "AI_Flow_Internal/02_Agent_Portfolio/AgentCard_WebsiteQualification.jsx",
+					"slug": "QUlfRmxvd19JbnRlcm5hbC8wMl9BZ2VudF9Qb3J0Zm9saW8vQWdlbnRDYXJkX1dlYnNpdGVRdWFsaWZpY2F0aW9uLmpzeA"
+				},
+				{
+					"name": "Agentportfolio Summary",
+					"rel": "AI_Flow_Internal/02_Agent_Portfolio/AgentPortfolio_Summary.jsx",
+					"slug": "QUlfRmxvd19JbnRlcm5hbC8wMl9BZ2VudF9Qb3J0Zm9saW8vQWdlbnRQb3J0Zm9saW9fU3VtbWFyeS5qc3g"
+				},
+				{
+					"name": "Architecture Blueprint",
+					"rel": "AI_Flow_Internal/03_Architecture/Architecture_Blueprint.jsx",
+					"slug": "QUlfRmxvd19JbnRlcm5hbC8wM19BcmNoaXRlY3R1cmUvQXJjaGl0ZWN0dXJlX0JsdWVwcmludC5qc3g"
+				},
+				{
+					"name": "Talktoai Getproposal",
+					"rel": "AI_Flow_Internal/06_Client_Showcase/TalkToAI_GetProposal.jsx",
+					"slug": "QUlfRmxvd19JbnRlcm5hbC8wNl9DbGllbnRfU2hvd2Nhc2UvVGFsa1RvQUlfR2V0UHJvcG9zYWwuanN4"
+				}
+			]
+		},
+		{
+			"id": "example_coastalmanufacturing",
+			"label": "Example Coastalmanufacturing",
+			"color": "#EC4899",
+			"docs": [
+				{
+					"name": "Example Agentdesigncard",
+					"rel": "Example_CoastalManufacturing/Example_AgentDesignCard.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX0FnZW50RGVzaWduQ2FyZC5qc3g"
+				},
+				{
+					"name": "Example Architectureblueprint",
+					"rel": "Example_CoastalManufacturing/Example_ArchitectureBlueprint.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX0FyY2hpdGVjdHVyZUJsdWVwcmludC5qc3g"
+				},
+				{
+					"name": "Example Evaluationsuite",
+					"rel": "Example_CoastalManufacturing/Example_EvaluationSuite.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX0V2YWx1YXRpb25TdWl0ZS5qc3g"
+				},
+				{
+					"name": "Example Golivechecklist",
+					"rel": "Example_CoastalManufacturing/Example_GoLiveChecklist.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX0dvTGl2ZUNoZWNrbGlzdC5qc3g"
+				},
+				{
+					"name": "Example Handoverpack",
+					"rel": "Example_CoastalManufacturing/Example_HandoverPack.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX0hhbmRvdmVyUGFjay5qc3g"
+				},
+				{
+					"name": "Example Monthlyreport",
+					"rel": "Example_CoastalManufacturing/Example_MonthlyReport.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX01vbnRobHlSZXBvcnQuanN4"
+				},
+				{
+					"name": "Example Opportunityassessment",
+					"rel": "Example_CoastalManufacturing/Example_OpportunityAssessment.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX09wcG9ydHVuaXR5QXNzZXNzbWVudC5qc3g"
+				},
+				{
+					"name": "Example Outcomedecomposition",
+					"rel": "Example_CoastalManufacturing/Example_OutcomeDecomposition.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX091dGNvbWVEZWNvbXBvc2l0aW9uLmpzeA"
+				},
+				{
+					"name": "Example Promptcard",
+					"rel": "Example_CoastalManufacturing/Example_PromptCard.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX1Byb21wdENhcmQuanN4"
+				},
+				{
+					"name": "Example Proposal",
+					"rel": "Example_CoastalManufacturing/Example_Proposal.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX1Byb3Bvc2FsLmpzeA"
+				},
+				{
+					"name": "Example Toolspecification",
+					"rel": "Example_CoastalManufacturing/Example_ToolSpecification.jsx",
+					"slug": "RXhhbXBsZV9Db2FzdGFsTWFudWZhY3R1cmluZy9FeGFtcGxlX1Rvb2xTcGVjaWZpY2F0aW9uLmpzeA"
+				}
+			]
+		},
+		{
+			"id": "session_ai_strategy",
+			"label": "Session Ai Strategy",
+			"color": "#F97316",
+			"docs": [
+				{
+					"name": "Session Outputreport",
+					"rel": "Session_AI_Strategy/Session_OutputReport.jsx",
+					"slug": "U2Vzc2lvbl9BSV9TdHJhdGVneS9TZXNzaW9uX091dHB1dFJlcG9ydC5qc3g"
+				},
+				{
+					"name": "Session Slides",
+					"rel": "Session_AI_Strategy/Session_Slides.jsx",
+					"slug": "U2Vzc2lvbl9BSV9TdHJhdGVneS9TZXNzaW9uX1NsaWRlcy5qc3g"
+				}
+			]
+		},
+		{
+			"id": "templates",
+			"label": "Templates",
+			"color": "#10B981",
+			"docs": [
+				{
+					"name": "Agentdesigncard Template",
+					"rel": "templates/AgentDesignCard_Template.jsx",
+					"slug": "dGVtcGxhdGVzL0FnZW50RGVzaWduQ2FyZF9UZW1wbGF0ZS5qc3g"
+				}
+			]
+		},
+		{
+			"id": "workshop_ai_opportunity",
+			"label": "Workshop Ai Opportunity",
+			"color": "#8B5CF6",
+			"docs": [
+				{
+					"name": "Workshop Outputreport",
+					"rel": "Workshop_AI_Opportunity/Workshop_OutputReport.jsx",
+					"slug": "V29ya3Nob3BfQUlfT3Bwb3J0dW5pdHkvV29ya3Nob3BfT3V0cHV0UmVwb3J0LmpzeA"
+				},
+				{
+					"name": "Workshop Participantworkbook",
+					"rel": "Workshop_AI_Opportunity/Workshop_ParticipantWorkbook.jsx",
+					"slug": "V29ya3Nob3BfQUlfT3Bwb3J0dW5pdHkvV29ya3Nob3BfUGFydGljaXBhbnRXb3JrYm9vay5qc3g"
+				},
+				{
+					"name": "Workshop Slides",
+					"rel": "Workshop_AI_Opportunity/Workshop_Slides.jsx",
+					"slug": "V29ya3Nob3BfQUlfT3Bwb3J0dW5pdHkvV29ya3Nob3BfU2xpZGVzLmpzeA"
+				}
+			]
+		}
+	],
+	"totalJsx": 26
+}
