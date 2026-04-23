@@ -62,6 +62,9 @@
 					<p style="font-size: 14px; color: {c.lightSlate}; margin: 0;">
 						Technical partnership. Senior-led. Outcome-driven.
 					</p>
+					<p style="font-size: 10px; color: {c.lightSlate}; margin: 8px 0 0 0; letter-spacing: 0.12em; text-transform: uppercase;">
+						Full profile — AI, integrations and compliance
+					</p>
 				</div>
 				<div style="text-align: right; color: {c.lightSlate}; font-size: 11px; line-height: 1.6;">
 					<div style="color: {c.white}; font-weight: 500; margin-bottom: 4px;">Perth, Western Australia</div>

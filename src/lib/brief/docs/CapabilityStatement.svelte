@@ -86,6 +86,9 @@
 					<p style="font-size: 16px; color: {c.lightSlate}; margin: 0; font-weight: 400;">
 						Technical partnership. Senior-led. Outcome-driven.
 					</p>
+					<p style="font-size: 11px; color: {c.lightSlate}; margin: 10px 0 0 0; letter-spacing: 0.12em; text-transform: uppercase;">
+						One-page summary
+					</p>
 				</div>
 				<div style="text-align: right; color: {c.lightSlate}; font-size: 12px; line-height: 1.7;">
 					<div style="color: #FFFFFF; font-weight: 500; margin-bottom: 4px;">Perth, Western Australia</div>
